@@ -39,8 +39,8 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/drf-auth/', include('rest_framework.urls')),
-    path('', include('habit_app.urls', namespace='habit')),
-    path('users/', include('users.urls', namespace='users')),
+    # path('', include('module.urls', namespace='habit')),
+    path('', include('users.urls', namespace='users')),
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('captcha/', include('captcha.urls')),

@@ -405,6 +405,17 @@ files = [
 django = ">=4.2"
 
 [[package]]
+name = "django-dump-load-utf8"
+version = "0.0.4"
+description = "Django command dumpdatautf8 and loaddatautf8"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "django-dump-load-utf8-0.0.4.tar.gz", hash = "sha256:963b8428803551007a53770aa60ceb9b02a59ec22c7a56b7aacda811772f2d17"},
+    {file = "django_dump_load_utf8-0.0.4-py3-none-any.whl", hash = "sha256:9f2002ab5eba55b5c4230667b6a7144a5a6aad9da89ee6f5b8bd323b00548110"},
+]
+
+[[package]]
 name = "django-environ"
 version = "0.11.2"
 description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
@@ -1179,4 +1190,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "0738d938e382327fc211be0b591170986cd41ba8e464014dff908498aa32e028"
+content-hash = "5326dfd1d05a2bcfcedf965bb32f2e2aa0a9826434e134fbb56c3b18d64696c6"

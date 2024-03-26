@@ -3,6 +3,7 @@ from users.models import User
 from users.serializers import UserSerializer
 
 
+# работа с Django REST Framework
 class UsersViewSet(ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
@@ -11,3 +12,6 @@ class UsersViewSet(ModelViewSet):
         user = serializer.save()
         user.set_password(user.password)
         user.save()
+
+
+# работа с Django

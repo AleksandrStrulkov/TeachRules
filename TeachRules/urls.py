@@ -22,6 +22,7 @@ from drf_yasg import openapi
 from django.conf.urls.static import static
 from django.conf import settings
 
+# работа с Django REST Framework
 schema_view = get_schema_view(
     openapi.Info(
         title="API Documentation",
@@ -46,3 +47,10 @@ urlpatterns = [
     path('captcha/', include('captcha.urls')),
 
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+# работа с Django
